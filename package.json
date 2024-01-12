@@ -1,0 +1,37 @@
+{
+  "name": "ms-upload",
+  "version": "0.0.1",
+  "description": "upload for gama-apps",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start src/app.js --name=ms-upload",
+    "stop": "sudo pm2 stop ms-upload",
+    "reload": "sudo pm2 reload ms-upload",
+    "restart": "sudo pm2 restart ms-upload",
+    "delete": "sudo pm2 delete ms-upload",
+    "reloadAll": "pm2 reload all",
+    "stopAll": "pm2 stop all",
+    "deleteAll": "pm2 delete all",
+    "dev": "nodemon src/app.js --watch"
+  },
+  "keywords": [
+    "AWS"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-group-routes": "^1.1.0",
+    "http-errors": "^2.0.0",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.4",
+    "nodemon": "^3.0.2",
+    "npm": "^10.3.0",
+    "pm2": "^5.3.0"
+  }
+}
